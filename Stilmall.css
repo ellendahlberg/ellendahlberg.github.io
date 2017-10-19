@@ -1,0 +1,21 @@
+/* Stillmallsuppgift */
+html, body {
+    margin: 0;
+}
+header, main, foiter{
+    padding: 20px;
+}
+body {
+    background-color: azure;
+    background-image: url(420.jpg);
+}
+header{
+    background-color: rgba(179, 253, 253, 0.51);
+}
+footer{
+    background-color: floralwhite;
+    min-height: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
