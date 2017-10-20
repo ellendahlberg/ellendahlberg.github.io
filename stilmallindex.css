@@ -1,0 +1,16 @@
+body {
+    background-color: rgba(8, 255, 255, 0.2)
+}
+footer nav {
+    background-color: white;
+}
+main{
+    display: inline-block;
+    width:600px;
+}
+nav#meny{
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    background-color: ghostwhite;
+}
