@@ -1,0 +1,11 @@
+/*Stillmall för bild och ljud*/
+main {
+  min-height: calc(100vh - 50px);
+  padding: 20px;
+}
+footer {
+  height: 25px;
+    background-color: darkblue;
+    color:aliceblue;
+    padding: 50px
+}
