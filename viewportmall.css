@@ -1,0 +1,9 @@
+section{
+    display: inline-block;
+    width: 300px;
+    border: 2px dotted pink; 
+    padding: 20px;
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
