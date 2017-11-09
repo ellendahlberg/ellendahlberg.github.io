@@ -1,0 +1,38 @@
+html,body,nav,main{
+    margin:0;
+    
+}
+main, p,h1, nav{
+    padding:20px
+}
+h1{
+    display:inline-block;
+}
+nav{
+    display: block;
+    background-color: dimgrey;
+    color: white;
+}
+nav a{
+    color: white
+        
+}
+#p1{
+    background-color: pink
+}
+#p2{
+    background-color: rgba(221, 160, 221, 0.55)
+        
+}
+#p3{
+    background-color: lightblue
+}
+#p4{
+    background-color: azure
+}
+header{
+    background-color: rgba(255, 20, 147, 0.12)
+}
+html{
+    background-color: rgba(211, 211, 211, 0.5)
+}
