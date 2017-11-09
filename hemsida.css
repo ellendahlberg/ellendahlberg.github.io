@@ -35,4 +35,8 @@ header{
 }
 html{
     background-color: rgba(211, 211, 211, 0.5)
+    
+}
+@media (min-width:600px){
+    nav 
 }
