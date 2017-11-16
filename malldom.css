@@ -1,0 +1,12 @@
+header{
+    background-color: green;
+    
+}
+button{
+    background-color: red;
+    padding: 20px;
+    font-size: 18px;
+}
+p:nth-of-type(2){
+    background-color: #88db88;
+}
