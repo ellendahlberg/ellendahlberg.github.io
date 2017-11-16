@@ -1,0 +1,7 @@
+div"info"{
+    display: none;
+    background-color: lightpink;
+}
+#openinfo{
+    cursor: pointer
+}

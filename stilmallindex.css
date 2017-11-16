@@ -14,7 +14,10 @@ nav#meny{
     display: inline-block;
     width: 300px;
     vertical-align: top;
-    background-color: white;
+    
+}
+nav img{
+    margin-left: 25px;
 }
 h1 , #p1 {
     display: inline-block; 
@@ -28,6 +31,7 @@ h1{
 }
 li {
     float: left;
+    background-color: goldenrod;
 }
 
 li a {
@@ -46,6 +50,10 @@ li a:hover {
     
 }
 @media (min-width:600px){
+    
+}
+ul{
+    list-style-type: none;
     
 }
     
