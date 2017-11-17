@@ -1,0 +1,13 @@
+.selected{
+    background-color: black;
+    color: white;
+}
+
+input[type="color"] { 
+width:60px; 
+height:60px;  
+}
+#rubrik{
+    height: 40px;
+    font-weight: 60px;
+}

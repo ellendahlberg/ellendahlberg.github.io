@@ -1,4 +1,4 @@
-div"info"{
+div#info{
     display: none;
     background-color: lightpink;
 }
