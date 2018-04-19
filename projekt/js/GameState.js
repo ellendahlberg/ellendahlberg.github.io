@@ -2,7 +2,7 @@
 var antal = 10;
 var GameState = {  
     create: function() {
-        
+        //Stääler in backrundfärg och bilder
         this.add.sprite( 0 , 0, 'back');
          
         this.stage.backgroundColor = '#ffffff'
@@ -12,11 +12,11 @@ var GameState = {
         platform3 = this.add.sprite(20,400, 'gras');
         platform4 = this.add.sprite(300,100, 'gras');
         monkey = this.add.sprite(200,20, 'monkey');
-        //banan = this.add.sprite(400,200, 'banan');
         
+        //Skapar bananer och dess fysik
         bananer = game.add.group();
 
-    for (var i = 0; i < 10; i++)
+        for (var i = 0; i < 10; i++)
         {  
             this.banan = bananer.create(Math.random() * 500, Math.random() * 500 , 'banan');
     
@@ -52,19 +52,10 @@ var GameState = {
         pil = this.input.keyboard.createCursorKeys();
         jumpButton = this.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
         
-        /* bomb = game.add.group();
-
-    for (var i = 0; i < 16; i++)
-    {
-        //  Detta visar grupper av bomber
-        //  Dom kommer falla ner random
-        //bomb.create(Math.random() * 700, -100 + Math.random() * -100, 'bomb');
-    }
-        */
-        
-    },
+      
+        },
     
-    update: function(){
+        update: function(){
         
          this.physics.arcade.overlap(monkey, bananer, this.collisionHandler);
         
@@ -78,20 +69,16 @@ var GameState = {
             if(jumpButton.isDown && monkey.body.touching.down){
                 monkey.body.velocity.y = -500;
         }
+  
+        },
+        collisionHandler: function  (monkey, banan) {
 
-      
-
-         
-    },
-    collisionHandler: function  (monkey, banan) {
-
-    //  If the player collides with a chilli it gets eaten :)
-    banan.kill();
-    antal = antal-1;
-    console.log(antal)
-    if(antal == 0){
+    // Dödar apan
+        banan.kill();
+        antal = antal-1;
+        console.log(antal)
+        if(antal == 0){
         game.state.start('level2');
+        }
     }
-}
-
 };
