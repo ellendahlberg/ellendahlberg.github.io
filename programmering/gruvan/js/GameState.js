@@ -16,7 +16,7 @@ var GameState = {
         platform1.body.allowGravity = false;
         platform1.body.immovable = true;
         platform2.body.allowGravity = false;
-        platform2.body.immobale = true;
+        platform2.body.immovable = true;
         
         //Ställ in tangentera
         pil = this.input.keyboard.createCursorKeys();
